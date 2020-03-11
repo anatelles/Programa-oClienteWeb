@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script type="text/javascript">
+		function primo (n)
+		{
+			var num= document.getElementById('n').value
+			var j=0;
+			 for( var i=1; i<=num; i++)
+			 	{
+			 		if(num%i==0)
+			 			j++;
+			 	}
+			 	if (j==2)
+			 		result="é um número primo";
+			 	else
+			 		result="não é um número primo";
+
+			 alert (result);
+		}
+
+	</script>
+</head>
+<body>
+	<form>
+	<input id="n">
+	<button onclick="primo();">Calcular</button>
+	</form>
+</body>
+</html>	
